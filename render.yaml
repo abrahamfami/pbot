@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: dexscreener-scraper
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 dexscreener_scraper.py"
